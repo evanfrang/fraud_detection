@@ -1,5 +1,4 @@
 creditcard.csv
 creditcard.csv.gz
-X.joblib
-y.joblib
+*.joblib
 __pycache__
