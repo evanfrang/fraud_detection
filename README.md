@@ -50,8 +50,8 @@ strength (C) 100, and max iterations of 500.
 
 | Class            | Precision | Recall | F1-Score | Support |
 |------------------|-----------|--------|----------|---------|
-| 0                | 1.00      | 0.98   | 0.99     | 56864   |
-| 1                | 0.09      | 0.92   | 0.17     | 98      |
+| No fraud         | 1.00      | 0.98   | 0.99     | 56864   |
+| Fraud            | 0.09      | 0.92   | 0.17     | 98      |
 | **Accuracy**     |           |        | 0.98     | 56962   |
 | **Macro Avg**    | 0.55      | 0.95   | 0.58     | 56962   |
 | **Weighted Avg** | 1.00      | 0.98   | 0.99     | 56962   |
@@ -66,8 +66,8 @@ Our linear SVC model user L2 regularization with strength (C) 10.
 
 | Class            | Precision | Recall | F1-Score | Support |
 |------------------|-----------|--------|----------|---------|
-| 0                | 1.00      | 0.99   | 0.99     | 56864   |
-| 1                | 0.11      | 0.92   | 0.19     | 98      |
+| No fraud         | 1.00      | 0.99   | 0.99     | 56864   |
+| Fraud            | 0.11      | 0.92   | 0.19     | 98      |
 | **Accuracy**     |           |        | 0.99     | 56962   |
 | **Macro Avg**    | 0.55      | 0.95   | 0.59     | 56962   |
 | **Weighted Avg** | 1.00      | 0.99   | 0.99     | 56962   |
@@ -83,8 +83,8 @@ Our random forest model had 200 estimators and no max depth.
 
 | Class            | Precision | Recall | F1-Score | Support |
 |------------------|-----------|--------|----------|---------|
-| 0                | 1.00      | 1.00   | 1.00     | 56864   |
-| 1                | 0.79      | 0.86   | 0.82     | 98      |
+| No fraud         | 1.00      | 1.00   | 1.00     | 56864   |
+| Fraud            | 0.79      | 0.86   | 0.82     | 98      |
 | **Accuracy**     |           |        | 1.00     | 56962   |
 | **Macro Avg**    | 0.90      | 0.93   | 0.91     | 56962   |
 | **Weighted Avg** | 1.00      | 1.00   | 1.00     | 56962   |
