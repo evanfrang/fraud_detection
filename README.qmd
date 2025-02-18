@@ -1,0 +1,20 @@
+---
+title: "Fraud Detection"
+author: "Evan Frangipane"
+format:
+  html:
+    toc: true
+    code-fold: true
+    css: styles.css
+    embed-resources: true
+    html-math-method: katex
+execute:
+  echo: true
+  warning: false
+  message: false
+---
+
+## hello
+hello 
+
+$$ y = m \times x + b $$
