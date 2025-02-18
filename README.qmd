@@ -32,7 +32,7 @@ As our dataset is highly imbalanced we need to balance to model it.
 We use SMOTEEN which oversamples and cleans at the same time.
 We have created correlations between our features, so we use PCA to create new features.
 
-Our new principal components computed for 95% expected variance:
+Our new principal components computed for 95% explained variance:
 ![pca](images/exp_var.jpg)
 
 Our first component is very descriptive.
