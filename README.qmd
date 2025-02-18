@@ -7,7 +7,7 @@ format:
     code-fold: true
     css: styles.css
     embed-resources: true
-    html-math-method: webtex
+    html-math-method: katex
 execute:
   echo: true
   warning: false
@@ -17,7 +17,7 @@ execute:
 ## Dataset
 
 We have a kaggle dataset on [credit card fraud](https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud).
-This is a highly imbalaced dataset with fraud only $0.172\%$ of $284,807$ transactions.
+This is a highly imbalaced dataset with fraud only $490$ of $284,807$ transactions.
 
 This dataset is anonymized for personal privacy, so we have PCA components as our features.
 
@@ -31,14 +31,10 @@ We calculate mutual information and correlation on our features to find out what
 As our dataset is highly imbalanced we need to balance to model it.
 We use SMOTEEN which oversamples and cleans at the same time.
 We have created correlations between our features, so we use PCA to create new features.
-The cumulative explained variance for our chosen $95\%$ explained variance is: 
-$$
-\begin{aligned}
-  &[0.38926958, 0.48210123, 0.55026181, 0.60424607, 0.65694163, 0.69805992, \\
-  &0.7356775,  0.77139423, 0.8014236,  0.82981687, 0.85601878, 0.87855404, \\
-  &0.89891217, 0.91828968, 0.93316781, 0.9461651,  0.9563693 ]
-\end{aligned}
-$$
+
+Our new principal components computed for 95% expected variance:
+![pca](images/exp_var.jpg)
+
 Our first component is very descriptive.
 
 ## Modeling

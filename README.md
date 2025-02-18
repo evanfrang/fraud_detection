@@ -12,9 +12,7 @@ Evan Frangipane
 
 We have a kaggle dataset on [credit card
 fraud](https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud). This is
-a highly imbalaced dataset with fraud only
-![0.172\\](https://latex.codecogs.com/svg.latex?0.172%5C%25 "0.172\%")
-of ![284,807](https://latex.codecogs.com/svg.latex?284%2C807 "284,807")
+a highly imbalaced dataset with fraud only $490$ of $284,807$
 transactions.
 
 This dataset is anonymized for personal privacy, so we have PCA
@@ -30,19 +28,10 @@ out what is interesting and predictive.
 As our dataset is highly imbalanced we need to balance to model it. We
 use SMOTEEN which oversamples and cleans at the same time. We have
 created correlations between our features, so we use PCA to create new
-features. The cumulative explained variance for our chosen
-![95\\](https://latex.codecogs.com/svg.latex?95%5C%25 "95\%") explained
-variance is:
+features.
 
-![\begin{aligned}
-  &\[0.38926958, 0.48210123, 0.55026181, 0.60424607, 0.65694163, 0.69805992, \\
-  &0.7356775,  0.77139423, 0.8014236,  0.82981687, 0.85601878, 0.87855404, \\
-  &0.89891217, 0.91828968, 0.93316781, 0.9461651,  0.9563693 \]
-\end{aligned}](https://latex.codecogs.com/svg.latex?%5Cbegin%7Baligned%7D%0A%20%20%26%5B0.38926958%2C%200.48210123%2C%200.55026181%2C%200.60424607%2C%200.65694163%2C%200.69805992%2C%20%5C%5C%0A%20%20%260.7356775%2C%20%200.77139423%2C%200.8014236%2C%20%200.82981687%2C%200.85601878%2C%200.87855404%2C%20%5C%5C%0A%20%20%260.89891217%2C%200.91828968%2C%200.93316781%2C%200.9461651%2C%20%200.9563693%20%5D%0A%5Cend%7Baligned%7D "\begin{aligned}
-  &[0.38926958, 0.48210123, 0.55026181, 0.60424607, 0.65694163, 0.69805992, \\
-  &0.7356775,  0.77139423, 0.8014236,  0.82981687, 0.85601878, 0.87855404, \\
-  &0.89891217, 0.91828968, 0.93316781, 0.9461651,  0.9563693 ]
-\end{aligned}")
+Our new principal components computed for 95% expected variance:
+![pca](images/exp_var.jpg)
 
 Our first component is very descriptive.
 
