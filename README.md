@@ -1,15 +1,7 @@
----
-author:
-- Evan Frangipane
-authors:
-- Evan Frangipane
-execute:
-  echo: true
-  message: false
-  warning: false
-title: Fraud Detection
-toc-title: Table of contents
----
+# Fraud Detection
+Evan Frangipane
+
+- [hello](#hello)
 
 ## hello
 

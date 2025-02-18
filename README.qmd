@@ -2,7 +2,7 @@
 title: "Fraud Detection"
 author: "Evan Frangipane"
 format:
-  html:
+  gfm:
     toc: true
     code-fold: true
     css: styles.css
