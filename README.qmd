@@ -7,7 +7,7 @@ format:
     code-fold: true
     css: styles.css
     embed-resources: true
-    html-math-method: katex
+    html-math-method: webtex
 execute:
   echo: true
   warning: false
