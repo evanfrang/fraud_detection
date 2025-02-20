@@ -63,13 +63,10 @@ results are for model performance on the testing dataset.
 Our logistic regression model used L2 regularization with strength (C)
 100.
 
-| Class        | Precision | Recall   | F1-Score | Support |
-|--------------|-----------|----------|----------|---------|
-| No fraud     | 1.00      | 0.98     | 0.99     | 56864   |
-| Fraud        | **0.10**  | **0.92** | **0.17** | 98      |
-| Accuracy     |           |          | 0.98     | 56962   |
-| Macro Avg    | 0.55      | 0.95     | 0.58     | 56962   |
-| Weighted Avg | 1.00      | 0.98     | 0.99     | 56962   |
+| Class    | Precision | Recall   | F1-Score | Support |
+|----------|-----------|----------|----------|---------|
+| No fraud | 1.00      | 0.98     | 0.99     | 56864   |
+| Fraud    | **0.10**  | **0.92** | **0.17** | 98      |
 
 The logistic regression performed abysmally with fraud precision but
 admirably with recall, resulting in a poor f1 score. A small precision
@@ -79,13 +76,10 @@ means our model found too many fraud cases (false positives).
 
 Our linear SVC model user L2 regularization with strength (C) 10.
 
-| Class        | Precision | Recall   | F1-Score | Support |
-|--------------|-----------|----------|----------|---------|
-| No fraud     | 1.00      | 0.99     | 0.99     | 56864   |
-| Fraud        | **0.11**  | **0.92** | **0.19** | 98      |
-| Accuracy     |           |          | 0.99     | 56962   |
-| Macro Avg    | 0.55      | 0.95     | 0.59     | 56962   |
-| Weighted Avg | 1.00      | 0.99     | 0.99     | 56962   |
+| Class    | Precision | Recall   | F1-Score | Support |
+|----------|-----------|----------|----------|---------|
+| No fraud | 1.00      | 0.99     | 0.99     | 56864   |
+| Fraud    | **0.11**  | **0.92** | **0.19** | 98      |
 
 The linear SVC performed abysmally with fraud precision but admirably
 with recall, resulting in a poor f1 score. It was slightly better than
@@ -96,13 +90,10 @@ cases.
 
 Our random forest model had 200 trees and no max depth.
 
-| Class        | Precision | Recall   | F1-Score | Support |
-|--------------|-----------|----------|----------|---------|
-| No fraud     | 1.00      | 1.00     | 1.00     | 56864   |
-| Fraud        | **0.79**  | **0.86** | **0.82** | 98      |
-| Accuracy     |           |          | 1.00     | 56962   |
-| Macro Avg    | 0.90      | 0.93     | 0.91     | 56962   |
-| Weighted Avg | 1.00      | 1.00     | 1.00     | 56962   |
+| Class    | Precision | Recall   | F1-Score | Support |
+|----------|-----------|----------|----------|---------|
+| No fraud | 1.00      | 1.00     | 1.00     | 56864   |
+| Fraud    | **0.79**  | **0.86** | **0.82** | 98      |
 
 The random forest performed well in both precision and recall resulting
 in a decent f1 score. Notably, the recall for fraud was worse than the
