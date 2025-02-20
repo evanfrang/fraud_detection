@@ -74,7 +74,7 @@ means our model found too many fraud cases (false positives).
 
 ### Linear SVC
 
-Our linear SVC model user L2 regularization with strength (C) 10.
+Our linear SVC model used L2 regularization with strength (C) 10.
 
 | Class    | Precision | Recall   | F1-Score | Support |
 |----------|-----------|----------|----------|---------|
@@ -109,8 +109,8 @@ better measure for performance in this case.
 
 ![AUC](images/auc.jpg)
 
-The random forest performed better across the board as can be seen in
-the plot. We also calculated the area under the curve (AUC) of the PR
-curve and average precision, which were roughly equal for all models.
-These also showed that random forest model performed better than the
-other models.
+The random forest performed better except at very high recall, as can be
+seen in the plot. We also calculated the area under the curve (AUC) of
+the PR curve and average precision, which were roughly equal for all
+models. These also showed that random forest model performed better than
+the other models.
